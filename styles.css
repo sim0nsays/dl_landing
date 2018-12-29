@@ -60,6 +60,7 @@ body {
 .intro-join__when {
     color: #fff;
     letter-spacing: 2px;
+    font-weight: 600;
 }
 
 .intro-join__btn {
