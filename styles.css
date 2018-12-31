@@ -7,8 +7,6 @@ body, html {
 .bg-image {
     width: auto;
     height : auto;
-    max-height: 100%;
-    max-width: 100%;
 }
 
 .section-intro {
@@ -59,12 +57,6 @@ body, html {
     padding: 10px 0px;
 }
 
-@media only screen and (max-width: 768px) {
-    .section-partners__info {
-        padding-bottom: 0px;
-    }
-}
-
 .intro-join__when {
     color: #fff;
     letter-spacing: 2px;
@@ -98,4 +90,50 @@ body, html {
 
 .telegram-btn {
     cursor: pointer;
+}
+
+.align-pivot {
+    height: 95px;
+}
+
+@media only screen and (max-width: 768px) {
+    .section-partners__info {
+        padding-bottom: 0px;
+    }
+}
+
+@media only screen and (max-height: 450px) and  (orientation: landscape) {
+    .intro-join__btn {
+        margin: 25px;
+    }
+
+    .align-pivot {
+        height: 25px;
+    }
+}
+
+@media only screen and (max-height: 320px) and  (orientation: landscape) {
+    .intro-join__btn {
+        margin: 10px;
+    }
+
+    .align-pivot {
+        height: 25px;
+    }
+
+    .intro-heading {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 321px) and  (orientation: portrait) {
+    .intro-heading {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 421px) and  (orientation: portrait) {
+    .intro-heading {
+        margin: 0px 10px;
+    }
 }
