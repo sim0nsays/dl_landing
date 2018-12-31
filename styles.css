@@ -72,16 +72,9 @@ body, html {
     padding: 15px;
 }
 
-.email-input {
-    margin-right: 0.5rem;
-}
-
-.submit-email {
-    display: flex;
-}
-
 .telegram-invite {
     margin-right: auto!important;
+    padding-right: 1.25rem;
 }
 
 .dialog-content {
