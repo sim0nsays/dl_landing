@@ -1,3 +1,9 @@
+body, html {
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
 .bg-image {
     width: auto;
     height : auto;
@@ -5,34 +11,30 @@
     max-width: 100%;
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-}
-
 .section-intro {
     background: url(img_bg.jpg) no-repeat #050d1e;
     background-size: cover;
+    background-position: center;
     padding-left: 0px;
     padding-right: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .intro-heading {
     font-family: 'Roboto Slab', serif;
     text-align: center;
     color: #fff;
-    padding-top: 20%;
     font-weight: 700;
     font-size: 36px;
+    letter-spacing: 3px;
 }
 
 .intro-join {
     text-align: center;
-    padding-bottom: 20%;
-}
-
-
-.intro-heading {
-    color: #fff;
 }
 
 .section-partners {
@@ -57,6 +59,12 @@ body {
     padding: 10px 0px;
 }
 
+@media only screen and (max-width: 768px) {
+    .section-partners__info {
+        padding-bottom: 0px;
+    }
+}
+
 .intro-join__when {
     color: #fff;
     letter-spacing: 2px;
@@ -68,6 +76,26 @@ body {
     font-weight: 700;
     letter-spacing: 2px;
     border-radius: 35px;
-    margin: 32px;
+    margin: 40px;
     padding: 15px;
+}
+
+.email-input {
+    margin-right: 0.5rem;
+}
+
+.submit-email {
+    display: flex;
+}
+
+.telegram-invite {
+    margin-right: auto!important;
+}
+
+.dialog-content {
+    margin-bottom: 1.5rem;
+}
+
+.telegram-btn {
+    cursor: pointer;
 }

@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
   <link rel="stylesheet" href="libs/util.carousel.css" />
   <link rel="stylesheet" href="libs/util.carousel.skins.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
 
   <title>Deep learning на пальцах!</title>
@@ -19,35 +20,61 @@
 
 <body>
   <div class="container-fluid section-intro">
-    <div class="intro-heading">
-      DEEP LEARNING НА ПАЛЬЦАХ
-    </div>
+    <div style="height: 95px;"></div>
 
     <div class="intro-join">
-      <button type="button" class="btn btn-primary intro-join__btn"  data-target="#exampleModalCenter">ЗАПИСАТЬСЯ НА КУРС</button>
-      <!-- <button type="button" class="btn btn-outline-light intro-join__btn">ЗАПИСАТЬСЯ НА КУРС</button> -->
+        <div class="intro-heading">
+            DEEP LEARNING НА ПАЛЬЦАХ
+          </div>
+      <span>
+        <!-- <button type="button" class="btn btn-primary intro-join__btn" data-toggle="modal" data-target="#subscribeModal">ЗАПИСАТЬСЯ НА КУРС</button> -->
+        <button type="button" class="btn btn-primary intro-join__btn">ЗАПИСАТЬСЯ НА КУРС</button>
+      </span>
       <div class="intro-join__when">ФЕВРАЛЬ 2019</div>
     </div>
+
     <div class="section-partners text-center row">
         <div class="col-md-2 section-partners__info">ПРИ ПОДДЕРЖКЕ</div>
         <div id="logo-showcase-gray" class="col-md-8 util-carousel logo-showcase-gray carousel-container">
-            <div class="item">
-              <a href="#"><img src="assets/images/logo_ngu.png" alt="" /></a>
-            </div>
-            <div class="item">
-              <a href="#"><img src="assets/images/logo_open.png" alt="" /></a>
-            </div>
-            <div class="item">
-              <a href="#"><img src="assets/images/logo_circle.png" alt="" /></a>
-            </div>
-            <div class="item">
-              <a href="#"><img src="assets/images/logo_csc.svg" alt="" /></a>
-            </div>
+          <div class="item">
+            <a href="#"><img src="assets/images/logo_ngu.png" alt="" /></a>
           </div>
+          <div class="item">
+            <a href="#"><img src="assets/images/logo_open.png" alt="" /></a>
+          </div>
+          <div class="item">
+            <a href="#"><img src="assets/images/logo_circle.png" alt="" /></a>
+          </div>
+          <div class="item">
+            <a href="#"><img src="assets/images/logo_csc.svg" width="160" alt="" /></a>
+          </div>
+        </div>
     </div>
   </div>
 
-
+  <!-- Modal -->
+  <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="subscribeModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle"><b>Subscribe</b></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body dialog-content">
+          <div class="submit-email">
+            <input type="text" placeholder="E-mail address" required class="form-control email-input" id="email">
+            <button type="button" class="btn btn-secondary submit-email__btn">Submit</button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <span class="telegram-invite">You are invited to join our <b>Telegram</b> channel</span>
+          <img class="telegram-btn" src="./assets/images/telegram.png" width="40" height="40" />         
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -61,9 +88,6 @@
   <script src="libs/jquery-1.11.0.min.js"></script>
   <script src="libs/jquery.utilcarousel.min.js"></script>
   <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
-
-  
-
   <script src="scripts.js"></script>
 </body>
 
