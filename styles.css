@@ -10,12 +10,13 @@ body, html {
 }
 
 .section-intro {
-    background: url(img_bg1.jpg) no-repeat #050d1e;
+    background: url(/assets/images/img_banner.jpg) no-repeat #050d1e;
     background-size: cover;
     background-position: center;
     padding-left: 0px;
     padding-right: 0px;
-    min-height: 100%;
+    height: 500px;
+    /* min-height: 100%; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -24,37 +25,17 @@ body, html {
 
 .intro-heading {
     font-family: 'Roboto Slab', serif;
-    text-align: center;
-    color: #fff;
+    margin-top: 25px;
+    margin-bottom: 25px;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 24px;
     letter-spacing: 3px;
 }
 
 .intro-join {
     text-align: center;
-}
-
-.section-partners {
-    background: #000e1a;
-    color: #fff;
-    opacity: 0.8;
-    justify-content: center;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-.carousel-container > .util-wrapper {
-    display: flex;
-    align-items: center;
-}
-
-.section-partners__info {
     margin-top: auto;
     margin-bottom: auto;
-    font-weight: 700;
-    letter-spacing: 2px;
-    padding: 10px 0px;
 }
 
 .intro-join__when {
@@ -64,6 +45,12 @@ body, html {
 }
 
 .intro-join__btn {
+    /* background: #0000f0; */
+    /* -webkit-box-shadow: 2px 2px 67px -1px rgba(161,161,173,1);
+    -moz-box-shadow: 2px 2px 67px -1px rgba(161,161,173,1);
+    box-shadow: 2px 2px 67px -1px rgba(161,161,173,1); */
+    /* box-shadow: 0px 4px 3px #5fa0b2; */
+    color: #fff;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -130,4 +117,177 @@ body, html {
     .intro-heading {
         margin: 0px 10px;
     }
+}
+
+.section-description {
+    padding: 35px 0px;
+    color: #fff;
+}
+
+.section-description__readers {
+    width: 380px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reader {
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.readers__info {
+    position: relative;
+    flex: 1;
+    padding: 20px 25px;
+    padding-right: 20px;
+    width: 270px;
+}
+
+.info-heading {
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+.info-subheading {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.info-text {
+    margin-top: 15px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.readers__image {
+    position: absolute;
+    top: 50px;
+    left: 150px;
+}
+
+.readers__helpers {
+    color: #000;
+    font-size: 14px;
+    margin-left: 25px;
+}
+
+.section-description__info {
+    flex: 1;
+    color: #000;
+}
+
+.heading {
+    letter-spacing: 5px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.helpers__heading {
+    margin: 5px 0px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.helpers__name {
+    line-height: 13px;
+}
+
+.section-partners {
+    background: url(/assets/images/bg_partners.png) no-repeat ;
+    background-color: #292f3b;
+    background-size: cover;
+    background-position: center;
+    height: 376px;
+}
+
+.section-partners__content {
+    display: flex;
+    height: inherit;
+}
+
+
+/* .section-partners {
+    background: #000e1a;
+    color: #fff;
+    opacity: 0.8;
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
+} */
+
+.carousel-container {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.carousel-container > .util-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.section-partners__info {
+    color: #fff;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px 0px;
+}
+
+.section-interactive {
+    margin-bottom: 50px;
+}
+
+.section-interactive__heading {
+    margin: 35px 0px;
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+.section-discussion {
+    background: #e3e3e3;
+}
+
+.discussion__content {
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.discussion__heading {
+    letter-spacing: 5px;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.discussion__button {
+    letter-spacing: 1px;
+    border-radius: 35px;
+    padding: 10px 25px;
+    font-weight: 600;
+    border: 1px solid #b3b3b3;
+    margin: 0px 10px;
+}
+
+.section-interactive__video-container {
+    display: flex;
+}
+
+.section-interactive__video {
+    width: 300px;
+    height: 250px;
+    border: 1px solid #d5d5d5;
+}
+
+.video__title {
+    font-weight: 700;
+    padding: 7px;
+}
+
+.section-footer {
+    height: 82px;
+    color: #555
 }

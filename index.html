@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
   <link rel="stylesheet" href="libs/util.carousel.css" />
   <link rel="stylesheet" href="libs/util.carousel.skins.css" />
+  <link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
 
@@ -19,36 +20,104 @@
 </head>
 
 <body>
-  <div class="container-fluid section-intro">
-    <div class="align-pivot"></div>
-
-    <div class="intro-join">
-      <div class="intro-heading">
+  <div class="intro-heading container">
         DEEP LEARNING НА ПАЛЬЦАХ
-      </div>
+  </div>
+  <div class="container-fluid section-intro">
+    <div class="intro-join">
       <span>
-        <button type="button" class="btn btn-info intro-join__btn">ЗАПИСАТЬСЯ
+        <button type="button" class="btn intro-join__btn btn-primary">ЗАПИСАТЬСЯ
           НА КУРС</button>
         <!-- <button type="button" class="btn btn-primary intro-join__btn">ЗАПИСАТЬСЯ НА КУРС</button> -->
       </span>
       <div class="intro-join__when">ФЕВРАЛЬ 2019</div>
     </div>
+  </div>
 
-    <div class="section-partners text-center row">
-      <div class="col-md-2 section-partners__info">ПРИ ПОДДЕРЖКЕ</div>
-      <div id="logo-showcase-gray" class="col-md-8 util-carousel logo-showcase-gray carousel-container">
-        <div class="item">
-          <a href="#"><img src="assets/images/logo_ngu.png" alt="" /></a>
+  <div class="container">
+    <div class="row section-description">
+      <div class="col-md-auto section-description__info">
+        <div class="info-heading">
+          ДЛЯ КОГО КУРС
         </div>
-        <div class="item">
-          <a href="#"><img src="assets/images/logo_open.png" alt="" /></a>
+        <div class="info-subheading">
+          За прошедние годы lorem ipsum
         </div>
-        <div class="item">
-          <a href="#"><img src="assets/images/logo_circle.png" alt="" /></a>
+        <div class="info-text">
+          Bacon ipsum dolor amet turducken ground round boudin ham hock salami sausage bresaola. Fatback rump tongue turkey, frankfurter jowl pastrami venison pancetta leberkas swine buffalo kielbasa. Ham jowl doner beef ribs, frankfurter meatball porchetta turkey pastrami flank chuck chicken. Venison ham hock pork loin shank.
         </div>
-        <div class="item">
-          <a href="#"><img src="assets/images/logo_csc.svg" width="160" alt="" /></a>
+        <div>
+
         </div>
+      </div>
+      <div class="col-md-4 section-description__readers">
+        <div class="readers__info bg-primary">
+          <div class="heading">ЛЕКЦИИ ЧИТАЕТ</div>
+          <div class="reader">Семен Козлов</div>
+          <div><i class="fa fa-twitter" aria-hidden="true"></i><a class="text-light" href="https://www.w3schools.com/html/">sim0nsays</a></div>
+          <img class="readers__image" src="./assets/images/photo_semen.jpg" />
+        </div>
+        <div class="readers__helpers">
+          <div class="helpers__heading">
+            ПОМОГАЮТ
+          </div>
+          <div class="helpers__name">
+            Юрий Бобуров
+          </div>
+          <div class="helpers__name">
+            Максим
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid section-partners text-center">
+    <div class="container section-partners__content">
+    <div class="col-md-2 section-partners__info">ПРИ ПОДДЕРЖКЕ</div>
+    <div id="logo-showcase-gray" class="col-md-10 util-carousel logo-showcase-gray carousel-container">
+      <div class="item">
+        <a href="#"><img src="assets/images/logo_ngu.png" alt="" /></a>
+      </div>
+      <div class="item">
+        <a href="#"><img src="assets/images/logo_open.png" alt="" /></a>
+      </div>
+      <div class="item">
+        <a href="#"><img src="assets/images/logo_circle.png" alt="" /></a>
+      </div>
+      <div class="item">
+        <a href="#"><img src="assets/images/logo_csc.svg" width="160" alt="" /></a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="container section-interactive">
+      <div class="row">
+        <div class="col-12 section-interactive__heading text-center">ЛЕКЦИИ И ЗАДАНИЯ</div>
+      </div>
+      <div id="simpleImg" class="util-carousel sample-img"></div>
+      <div id="docs-container" class="section-interactive__video-container"></div>
+  </div>
+
+  <div class="container section-discussion">
+    <div class="row discussion__content">
+      <div class="discussion__heading">
+        ДЛЯ ВОПРОСОВ, ПОМОЩИ И ОБСУЖДЕНИЯ
+      </div>
+      <div class="discussion__button">
+          <i class="fa fa-twitter" aria-hidden="true"></i>twitter
+      </div>
+      <div class="discussion__button">
+          <i class="fa fa-telegram" aria-hidden="true"></i>twitter
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row align-items-center section-footer text-center">
+      <div class="col-12">
+        	&copy 2019 DL Course
       </div>
     </div>
   </div>
@@ -146,10 +215,12 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="libs/jquery-1.11.0.min.js"></script>
   <script src="libs/jquery.utilcarousel.min.js"></script>
+  <script src="libs/magnific-popup/jquery.magnific-popup.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+  
   <script src="scripts.js"></script>
 </body>
 
