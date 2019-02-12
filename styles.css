@@ -295,3 +295,7 @@ body, html {
 .detail-container {
     height: 84px;
 }
+
+.test {
+    padding: 0 40px;
+}
