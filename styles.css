@@ -291,3 +291,7 @@ body, html {
     height: 82px;
     color: #555
 }
+
+.detail-container {
+    height: 84px;
+}
