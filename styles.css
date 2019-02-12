@@ -258,18 +258,25 @@ body, html {
 }
 
 .discussion__heading {
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     font-size: 16px;
-    font-weight: 900;
+    font-weight: 700;
+}
+
+.discussion__toolbar {
+    display: flex;
+    justify-content: center;
 }
 
 .discussion__button {
     letter-spacing: 1px;
     border-radius: 35px;
-    padding: 10px 25px;
+    padding: 5px 15px;
     font-weight: 600;
+    font-size: 18px;
     border: 1px solid #b3b3b3;
     margin: 0px 10px;
+    width: 156;
 }
 
 .section-interactive__video-container {
@@ -294,8 +301,4 @@ body, html {
 
 .detail-container {
     height: 84px;
-}
-
-.test {
-    padding: 0 40px;
 }
