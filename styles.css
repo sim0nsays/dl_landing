@@ -64,9 +64,8 @@ body, html {
     padding-right: 1.25rem;
 }
 
-.telegram-btn {
-    cursor: pointer;
-    border-radius: 50%;
+.telegram-btn > img {
+    margin-right: 3px;
 }
 
 .telegram-btn:hover {
@@ -181,14 +180,13 @@ body, html {
 
 .heading {
     letter-spacing: 5px;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 900;
 }
 
 .helpers__heading {
-    margin: 5px 0px;
+    /* margin: 5px 0px; */
     font-weight: 900;
-    letter-spacing: 2px;
 }
 
 .helpers__name {
@@ -205,7 +203,9 @@ body, html {
 
 .section-partners__content {
     display: flex;
+    flex-direction: column;
     height: inherit;
+    justify-content: space-evenly;
 }
 
 
@@ -234,7 +234,7 @@ body, html {
     margin-bottom: auto;
     font-weight: 700;
     letter-spacing: 2px;
-    padding: 10px 0px;
+    padding-top: 30px;
 }
 
 .section-interactive {
@@ -243,9 +243,6 @@ body, html {
 
 .section-interactive__heading {
     margin: 35px 0px;
-    font-weight: 900;
-    font-size: 18px;
-    letter-spacing: 5px;
 }
 
 .section-discussion {
@@ -254,12 +251,16 @@ body, html {
 
 .discussion__content {
     align-items: center;
-    padding: 20px 50px;
+    padding: 10px 0px;
+    color: #fff;
+    background: #1f2630;
+    /* background: #000e1a; */
+    opacity: 0.8;
 }
 
 .discussion__heading {
     letter-spacing: 2px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
 }
 
@@ -272,7 +273,7 @@ body, html {
     letter-spacing: 1px;
     border-radius: 35px;
     padding: 5px 15px;
-    font-weight: 600;
+    font-weight: 100;
     font-size: 18px;
     border: 1px solid #b3b3b3;
     margin: 0px 10px;
@@ -296,7 +297,7 @@ body, html {
 
 .section-footer {
     height: 82px;
-    color: #555
+    color: #fff;
 }
 
 .detail-container {
