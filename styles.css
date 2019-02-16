@@ -45,18 +45,13 @@ body, html {
 }
 
 .intro-join__btn {
-    /* background: #0000f0; */
-    /* -webkit-box-shadow: 2px 2px 67px -1px rgba(161,161,173,1);
-    -moz-box-shadow: 2px 2px 67px -1px rgba(161,161,173,1);
-    box-shadow: 2px 2px 67px -1px rgba(161,161,173,1); */
-    /* box-shadow: 0px 4px 3px #5fa0b2; */
     color: #fff;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 2px;
     border-radius: 35px;
     margin: 40px;
-    padding: 15px;
+    padding: 15px 25px;
 }
 
 .telegram-invite {
@@ -179,10 +174,11 @@ body, html {
     font-weight: 600;
     font-size: 14px;
     letter-spacing: 1px;
+    color: rgb(41, 139, 250);
 }
 
 .info-text {
-    margin-top: 15px;
+    margin-top: 19px;
     font-size: 14px;
     letter-spacing: 1px;
 }
@@ -208,6 +204,17 @@ body, html {
     letter-spacing: 5px;
     font-size: 24px;
     font-weight: 900;
+    color: #000;
+}
+
+.heading-white {
+    color: #fff;
+}
+
+.subheading {
+    color: #fff;
+    margin-top: 21px;
+    font-size: 18px;
 }
 
 .helpers__heading {
@@ -343,12 +350,35 @@ body, html {
 }
 
 .section-helpers {
+    min-height: 376px;
     height: 376px;
     background: rgb(237, 237, 237);
 }
 
+.section-helpers__wrapper {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .helpers {
     justify-content: space-between;
+}
+
+.helpers-other {
+    background: url(/assets/images/bg_1.jpg) no-repeat ;
+    background-color: #292f3b;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    min-height: 63px;
+}
+
+.helpers-other__text {
+    color: #fff;
+    padding: 27px 34px;
 }
 
 .helper {
