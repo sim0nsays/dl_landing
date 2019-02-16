@@ -123,11 +123,14 @@ body, html {
     color: #fff;
 }
 
-.section-description__readers {
-    width: 380px;
-    height: 290px;
+.section-description__reader {
+    background: url(/assets/images/blobresource.jpg) no-repeat #050d1e;
+    background-size: cover;
+    background-position: center;
     display: flex;
-    flex-direction: column;
+    height: 326px;
+    width: 423px;
+    padding: 0px;
 }
 
 .reader {
@@ -135,12 +138,35 @@ body, html {
     margin-top: 15px;
 }
 
-.readers__info {
-    position: relative;
-    flex: 1;
-    padding: 20px 25px;
-    padding-right: 20px;
-    width: 270px;
+.reader__info {
+    height: 67px;
+    width: 100%;
+    margin-top: auto;
+    background: rgba(29, 36, 46, 0.8);
+    /* opacity: 0.8; */
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reader__is {
+    display: inline-block;
+}
+
+.reader-name {
+    display: inline-block;
+}
+
+.reader-heading {
+    display: inline-block;
+    font-weight: 700;
+    margin-right: 17px;
+}
+
+.reader-name {
+
 }
 
 .info-heading {
@@ -253,9 +279,9 @@ body, html {
     align-items: center;
     padding: 10px 0px;
     color: #fff;
-    background: #1f2630;
+    background: rgba(31, 38, 48, 0.8);
     /* background: #000e1a; */
-    opacity: 0.8;
+    /* opacity: 0.8; */
 }
 
 .discussion__heading {
@@ -274,10 +300,22 @@ body, html {
     border-radius: 35px;
     padding: 5px 15px;
     font-weight: 100;
-    font-size: 18px;
+    font-size: 14px;
     border: 1px solid #b3b3b3;
-    margin: 0px 10px;
-    width: 156;
+    margin: 0px 5px;
+    height: 37px;
+    width: 156px;
+    min-width: 156px;
+    color: #fff;
+    display: table;
+    text-decoration: none;
+}
+
+.discussion__button:hover {
+    cursor: pointer;
+    border: 1px solid #298bfa;
+    color: #fff;
+    text-decoration: none;
 }
 
 .section-interactive__video-container {
@@ -302,4 +340,27 @@ body, html {
 
 .detail-container {
     height: 84px;
+}
+
+.section-helpers {
+    height: 376px;
+    background: rgb(237, 237, 237);
+}
+
+.helpers {
+    justify-content: space-between;
+}
+
+.helper {
+    max-width: 198px;
+    line-height: 1;
+}
+
+.helper__name {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.helper__about {
+    color: rgb(41, 139, 250);
 }
