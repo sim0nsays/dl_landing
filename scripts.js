@@ -120,7 +120,7 @@ $(document).ready(function () {
     var tabs = [
         '.tabbed-section__selector-tab-1',
         '.tabbed-section__selector-tab-2',
-        '.tabbed-section__selector-tab-3'
+        // '.tabbed-section__selector-tab-3'
     ];
     
     // Create the toggle function
@@ -136,7 +136,7 @@ $(document).ready(function () {
         // the children ( the tabs ) with childNodes
         this.parentNode.childNodes[1].classList.remove('active');
         this.parentNode.childNodes[3].classList.remove('active');
-        this.parentNode.childNodes[5].classList.remove('active');
+        // this.parentNode.childNodes[5].classList.remove('active');
     
         // Then, give `this` (the clicked tab), the active class
         this.classList.add('active');
@@ -150,8 +150,8 @@ $(document).ready(function () {
         // Hide the second
         $('.tabbed-section-2')[0].classList.remove('visible');
         $('.tabbed-section-2')[0].classList.add('hidden');
-            $('.tabbed-section-3')[0].classList.remove('visible');
-        $('.tabbed-section-3')[0].classList.add('hidden');
+        // $('.tabbed-section-3')[0].classList.remove('visible');
+        // $('.tabbed-section-3')[0].classList.add('hidden');
         }
     
         if(this.classList.contains('tabbed-section__selector-tab-2')) {
@@ -161,20 +161,20 @@ $(document).ready(function () {
         // Hide the first
         $('.tabbed-section-1')[0].classList.remove('visible');
         $('.tabbed-section-1')[0].classList.add('hidden');
-        $('.tabbed-section-3')[0].classList.remove('visible');
-        $('.tabbed-section-3')[0].classList.add('hidden');
+        // $('.tabbed-section-3')[0].classList.remove('visible');
+        // $('.tabbed-section-3')[0].classList.add('hidden');
         }
         
-        if(this.classList.contains('tabbed-section__selector-tab-3')) {
-        // and change the classes, show the second content panel
-        $('.tabbed-section-3')[0].classList.remove('hidden');
-        $('.tabbed-section-3')[0].classList.add('visible');
-        // Hide the first
-        $('.tabbed-section-1')[0].classList.remove('visible');
-        $('.tabbed-section-1')[0].classList.add('hidden');
-        $('.tabbed-section-2')[0].classList.remove('visible');
-        $('.tabbed-section-2')[0].classList.add('hidden');
-        }
+        // if(this.classList.contains('tabbed-section__selector-tab-3')) {
+        // // and change the classes, show the second content panel
+        // $('.tabbed-section-3')[0].classList.remove('hidden');
+        // $('.tabbed-section-3')[0].classList.add('visible');
+        // // Hide the first
+        // $('.tabbed-section-1')[0].classList.remove('visible');
+        // $('.tabbed-section-1')[0].classList.add('hidden');
+        // $('.tabbed-section-2')[0].classList.remove('visible');
+        // $('.tabbed-section-2')[0].classList.add('hidden');
+        // }
     });
     };
     

@@ -372,6 +372,7 @@ body, html {
     display: flex;
     justify-content: center;
     min-height: 63px;
+    margin-bottom: 8px;
 }
 
 .helpers-other__text {
@@ -395,4 +396,21 @@ body, html {
 
 .svg-img {
     margin-right: 2px;
+}
+
+.video-link {
+    color: rgb(41, 139, 250);
+}
+
+.table td, .table th {
+    border-top: 0px;
+}
+
+.table tr:nth-child(odd) {
+    background: rgb(238, 243, 249);
+}
+
+.no-wrap {
+    width: 1%;
+    white-space: nowrap;
 }
