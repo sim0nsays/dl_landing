@@ -283,7 +283,7 @@ body, html {
     align-items: center;
     padding: 10px 0px;
     color: #fff;
-    background: rgba(31, 38, 48, 0.8);
+    /* background: rgba(31, 38, 48, 0.8); */
     /* background: #000e1a; */
     /* opacity: 0.8; */
 }

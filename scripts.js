@@ -40,8 +40,10 @@ var container = $('#docs-container');
 //         });
 //     });
 // }
-
+$('.tabbed-section__highlighter').css('max-width', $('.tabbed-section__selector-tab-1').width());
 $(document).ready(function () {
+    $('.tabbed-section__highlighter').css('max-width', $('.tabbed-section__selector-tab-1').width());
+
     $('.util-wrapper').css('display', 'flex');
     $('.util-wrapper').css('align-items', 'center');
     $('.util-wrapper').css('height', '115px');
@@ -98,28 +100,21 @@ $(document).ready(function () {
         container1.append(tmpl);
     });
 
-    $('#simpleImg').utilCarousel({
-        responsiveMode: 'itemWidthRange',
-        itemWidthRange: [280, 340],
-        pagination: false,
-        navigationText : ['<i class="icon-left-open-big"></i>', '<i class=" icon-right-open-big"></i>'],
-        navigation: true,
-        rewind: false
-    });
-
+//    $('#simpleImg').utilCarousel({
+//        responsiveMode: 'itemWidthRange',
+//        itemWidthRange: [280, 340],
+//        pagination: false,
+//        navigationText : ['<i class="icon-left-open-big"></i>', '<i class=" icon-right-open-big"></i>'],
+//        navigation: true,
+//        rewind: false
+//    });
+    
 });
 
-// TOGGLE SECTIONS
-// querySelector, jQuery style
-// var $ = function (selector) {
-//     return document.querySelectorAll(selector);
-//     };
-    
-    
     // Define tabs, write down them classes
     var tabs = [
         '.tabbed-section__selector-tab-1',
-        '.tabbed-section__selector-tab-2',
+        // '.tabbed-section__selector-tab-2',
         // '.tabbed-section__selector-tab-3'
     ];
     
@@ -135,7 +130,7 @@ $(document).ready(function () {
         // climbing up the DOM tree with `parentNode` and target 
         // the children ( the tabs ) with childNodes
         this.parentNode.childNodes[1].classList.remove('active');
-        this.parentNode.childNodes[3].classList.remove('active');
+        // this.parentNode.childNodes[3].classList.remove('active');
         // this.parentNode.childNodes[5].classList.remove('active');
     
         // Then, give `this` (the clicked tab), the active class
@@ -146,24 +141,26 @@ $(document).ready(function () {
         // and change the classes, show the first content panel
         $('.tabbed-section-1')[0].classList.remove('hidden');
         $('.tabbed-section-1')[0].classList.add('visible');
+
+        
         
         // Hide the second
-        $('.tabbed-section-2')[0].classList.remove('visible');
-        $('.tabbed-section-2')[0].classList.add('hidden');
+        // $('.tabbed-section-2')[0].classList.remove('visible');
+        // $('.tabbed-section-2')[0].classList.add('hidden');
         // $('.tabbed-section-3')[0].classList.remove('visible');
         // $('.tabbed-section-3')[0].classList.add('hidden');
         }
     
-        if(this.classList.contains('tabbed-section__selector-tab-2')) {
+        // if(this.classList.contains('tabbed-section__selector-tab-2')) {
         // and change the classes, show the second content panel
-        $('.tabbed-section-2')[0].classList.remove('hidden');
-        $('.tabbed-section-2')[0].classList.add('visible');
+        // $('.tabbed-section-2')[0].classList.remove('hidden');
+        // $('.tabbed-section-2')[0].classList.add('visible');
         // Hide the first
-        $('.tabbed-section-1')[0].classList.remove('visible');
-        $('.tabbed-section-1')[0].classList.add('hidden');
+        // $('.tabbed-section-1')[0].classList.remove('visible');
+        // $('.tabbed-section-1')[0].classList.add('hidden');
         // $('.tabbed-section-3')[0].classList.remove('visible');
         // $('.tabbed-section-3')[0].classList.add('hidden');
-        }
+        // }
         
         // if(this.classList.contains('tabbed-section__selector-tab-3')) {
         // // and change the classes, show the second content panel
