@@ -12,42 +12,198 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
   <link rel="stylesheet" href="libs/util.carousel.css" />
   <link rel="stylesheet" href="libs/util.carousel.skins.css" />
+  <link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="tabs.css">
 
   <title>Deep learning на пальцах!</title>
 </head>
 
 <body>
+  <div class="intro-heading container">
+    DEEP LEARNING НА ПАЛЬЦАХ
+  </div>
   <div class="container-fluid section-intro">
-    <div class="align-pivot"></div>
-
     <div class="intro-join">
-      <div class="intro-heading">
-        DEEP LEARNING НА ПАЛЬЦАХ
-      </div>
       <span>
-        <button type="button" class="btn btn-info intro-join__btn">ЗАПИСАТЬСЯ
+        <div class="subheading">Если вы давно собирались разобраться <br /> с этими всеми нейросетями - вот он, шанс!</div>
+        <button type="button" class="btn intro-join__btn btn-primary">ЗАПИСАТЬСЯ
           НА КУРС</button>
         <!-- <button type="button" class="btn btn-primary intro-join__btn">ЗАПИСАТЬСЯ НА КУРС</button> -->
       </span>
-      <div class="intro-join__when">ФЕВРАЛЬ 2019</div>
-    </div>
 
-    <div class="section-partners text-center row">
-      <div class="col-md-2 section-partners__info">ПРИ ПОДДЕРЖКЕ</div>
-      <div id="logo-showcase-gray" class="col-md-8 util-carousel logo-showcase-gray carousel-container">
-        <div class="item">
-          <a href="#"><img src="assets/images/logo_ngu.png" alt="" /></a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row section-description">
+      <div class="col-md-auto section-description__info">
+        <div class="info-heading heading">
+          ВВОДНЫЙ КУРС
         </div>
-        <div class="item">
-          <a href="#"><img src="assets/images/logo_open.png" alt="" /></a>
+        <div class="info-subheading">
+          Лучший способ начать изучать deep learning на русском языке
         </div>
-        <div class="item">
-          <a href="#"><img src="assets/images/logo_circle.png" alt="" /></a>
+        <div class="info-text">
+          Курс предназначен для того, чтобы разобраться с современным deep learning с нуля, и не требует знаний ни
+          нейросетей, ни machine learning вообще. Лекции стримами на Youtube, задания на Питоне, обсуждения и помощь в
+          лучших русскоязычных ML-сообществах — <a href="http://ods.ai">ODS.ai</a> и <a href="http://closedcircles.com/?invite=a5f6bea89716a16054cfbfb3fafa6ed111dff4b8">ClosedCircles</a>.
+          <br />
+          <br />
+
+          Одновременно и в том же объеме курс читается для магистрантов Новосибирского Государственного Университета, а
+          также студентов CS центра Новосибирска.
         </div>
-        <div class="item">
-          <a href="#"><img src="assets/images/logo_csc.svg" width="160" alt="" /></a>
+        <div>
+        </div>
+      </div>
+      <div class="col-md-auto section-description__reader">
+        <div class="reader__info">
+          <div class="reader__is">
+            <div class="reader-heading">ЛЕКЦИИ ЧИТАЕТ</div>
+            <div class="reader-name">СЕМЕН КОЗЛОВ</div>
+          </div>
+          <div class="reader__twitter">
+            <i class="fa fa-twitter" aria-hidden="true"></i><a class="text-light" target="_blank" href="https://twitter.com/sim0nsays?lang=en">sim0nsays</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid section-helpers">
+    <div class="container section-helpers__wrapper">
+      <div class="row">
+        <div class="col-12 text-center heading">ПОМОГАЮТ</div>
+      </div>
+      <div class="row helpers">
+        <div class="helper">
+          <div class="helper__name">
+            ЮРИЙ БАБУРОВ
+          </div>
+          <div class="helper__about">
+            Специалист по анализу текста и распознаванию речи
+          </div>
+        </div>
+        <div class="helper">
+          <div class="helper__name">
+            ПАВЕЛ ПЕТРОЧЕНКО <br /> И ДЕНИС ДЕНИСЕНКО
+          </div>
+          <div class="helper__about">
+            <a target="_blank" href="http://www.onpositive.com/">OnPositive</a>
+          </div>
+        </div>
+        <div class="helper">
+          <div class="helper__name">
+            МАКСИМ ВАХРУШЕВ <br /> И КИРИЛЛ БРОДТ
+          </div>
+          <div class="helper__about">
+            <a target="_blank" href="https://compscicenter.ru/">CS-Центр Новосибирска</a>
+          </div>
+        </div>
+        <div class="helper">
+          <div class="helper__name">
+            АЛЕКСАНДР ГОНЧАРЕНКО
+          </div>
+          <div class="helper__about">
+            <a target="_blank" href="https://expasoft.com/">Expasoft</a>
+          </div>
+        </div>
+        <div class="helper">
+          <div class="helper__name">
+            ЛЕНА БРУЧЕС
+          </div>
+          <div class="helper__about">
+            <a target="_blank" href="https://2gis.ru/">2GIS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container section-interactive">
+    <div class="row">
+      <div class="col-12 section-interactive__heading text-center heading">ЛЕКЦИИ И ЗАДАНИЯ</div>
+
+      <div class="material-tabs">
+        <div class="tabbed-section__selector">
+          <a class="tabbed-section__selector-tab-1 active" href="#">ЛЕКЦИИ И ЗАДАНИЯ</a>
+          <!-- <a class="tabbed-section__selector-tab-2" href="#">ЗАДАНИЯ</a> -->
+          <!-- <a class="tabbed-section__selector-tab-3" href="#">СОРЕВНОВАНИЯ</a> -->
+
+          <span class="tabbed-section__highlighter"></span>
+        </div>
+
+
+        <div class="tabbed-section-1 visible">
+            <div class="table-responsive-lg">
+                <table id="lections-table" class="table">
+                  <tbody>
+                    <tr>
+                      <th scope="row" class="no-wrap">Лекция 1: <br/> Введение</th>
+                      <td class="no-wrap">20 февраля, 8:40 Мск</td>
+                      <td>О чем курс, что такое machine learning и deep learning, основные домены - computer vision, NLP, speech recognition, reinforcement learning. Ресурсы. </td>
+                      <td><a class="video-link" target="_blank" href="https://www.youtube.com/watch?v=_q46x0tq2FQ">https://www.youtube.com/watch?v=_q46x0tq2FQ</a></td>
+                    </tr>
+                    <tr>
+                  </tbody>
+                </table>
+              </div>
+        </div>
+        <div class="tabbed-section-2 hidden">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="container-fluid section-partners text-center">
+    <div class="container section-partners__content">
+      <div class="row">
+        <div class="col-md-12 section-partners__info heading">ПРИ ПОДДЕРЖКЕ</div>
+      </div>
+      <div class="row">
+        <div id="logo-showcase-gray" class="col-md-12 util-carousel logo-showcase-gray carousel-container">
+          <div class="item">
+            <a href="#"><img src="assets/images/logo_ngu.png" alt="" /></a>
+          </div>
+          <div class="item">
+            <a href="#"><img src="assets/images/partners_ods.svg" height="73" width="73" alt="" /></a>
+          </div>
+          <div class="item">
+            <a href="#"><img src="assets/images/logo_circle.png" alt="" /></a>
+          </div>
+          <div class="item">
+            <a href="#"><img src="assets/images/logo_csc.svg" width="160" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="row discussion__content">
+        <div class="discussion__heading col-lg-5 col-md-12">
+          ДЛЯ ВОПРОСОВ, ПОМОЩИ И ОБСУЖДЕНИЙ
+        </div>
+        <div class="col-lg-7 col-md-12 row discussion__toolbar">
+          <a href="" target="_blank" class="discussion__button col-sm-3">
+            <img class="svg-img" src="assets/images/twitter.svg" height="25" width="25">twitter
+          </a>
+          <a href="" target="_blank" class="discussion__button telegram-btn col-sm-3">
+            <img class="svg-img" src="assets/images/3.svg" height="25" width="25">telegram
+          </a>
+          <a href="" target="_blank" class="discussion__button col-sm-3">
+            <img class="svg-img" src="assets/images/logo_ods.svg" height="25" width="25"> ods.ai
+          </a>
+          <a href="" target="_blank" class="discussion__button col-sm-3">
+            <img src="assets/images/5.png"> closedcircles
+          </a>
+        </div>
+      </div>
+      <div class="row align-items-center section-footer text-center">
+        <div class="col-12">
+          &copy 2019 DL Course
         </div>
       </div>
     </div>
@@ -144,12 +300,15 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="libs/modernizr.custom.30587.js"></script>
   <script src="libs/jquery-1.11.0.min.js"></script>
   <script src="libs/jquery.utilcarousel.min.js"></script>
+  <script src="libs/magnific-popup/jquery.magnific-popup.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+
   <script src="scripts.js"></script>
 </body>
 
