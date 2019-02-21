@@ -301,17 +301,17 @@ body, html {
 }
 
 .discussion__button {
-    flex-basis: 156px;
+    flex-basis: 159px;
     letter-spacing: 1px;
     border-radius: 35px;
     padding: 5px 15px;
     font-weight: 100;
     font-size: 14px;
     border: 1px solid #b3b3b3;
-    margin: 3px 5px;
+    margin: 3px;
     height: 37px;
     width: 156px;
-    min-width: 156px;
+    min-width: 159px;
     color: #fff;
     text-decoration: none;
 }
@@ -361,7 +361,6 @@ body, html {
 }
 
 .helpers {
-    justify-content: space-between;
 }
 
 .helpers-other {
@@ -383,6 +382,7 @@ body, html {
 .helper {
     max-width: 198px;
     line-height: 1;
+    margin-bottom: 10px;
 }
 
 .helper__name {
