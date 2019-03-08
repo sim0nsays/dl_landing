@@ -25,6 +25,7 @@ body, html {
 
 .intro-heading {
     display: flex;
+    align-items: center;
     font-family: 'Roboto Slab', serif;
     margin-top: 25px;
     margin-bottom: 25px;
