@@ -24,12 +24,17 @@ body, html {
 }
 
 .intro-heading {
+    display: flex;
     font-family: 'Roboto Slab', serif;
     margin-top: 25px;
     margin-bottom: 25px;
     font-weight: 700;
     font-size: 24px;
     letter-spacing: 3px;
+}
+
+.logo {
+    padding-right: 5px;
 }
 
 .intro-join {
@@ -348,20 +353,25 @@ body, html {
 }
 
 .section-helpers {
+    background: url(/assets/images/bg_help.png) no-repeat #ededed;
+    background-position: left;
     min-height: 376px;
     height: 376px;
-    background: rgb(237, 237, 237);
 }
 
 .section-helpers__wrapper {
     height: inherit;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+}
+
+.helpers-content {
+    display: flex;
+    align-items: center;
 }
 
 .helpers {
-    justify-content: space-around;
+    flex: 1;
+    margin-top: 12px;
 }
 
 .helpers-other {
@@ -381,18 +391,19 @@ body, html {
 }
 
 .helper {
-    max-width: 198px;
     line-height: 1;
     margin-bottom: 10px;
 }
 
 .helper__name {
     margin-bottom: 12px;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .helper__about {
     color: rgb(41, 139, 250);
+    font-size: 14px;
 }
 
 .svg-img {
