@@ -65,9 +65,9 @@ body, html {
     padding-right: 1.25rem;
 }
 
-.telegram-btn:hover {
+/* .telegram-btn:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+} */
 
 .align-pivot {
     height: 95px;
@@ -281,11 +281,9 @@ body, html {
 
 .discussion__content {
     align-items: center;
-    padding: 10px 0px;
-    color: #fff;
-    /* background: rgba(31, 38, 48, 0.8); */
-    /* background: #000e1a; */
-    /* opacity: 0.8; */
+    padding: 24px 0px;
+    color: #000;
+    border-bottom: 1px solid #d5d5d5
 }
 
 .discussion__heading {
@@ -312,14 +310,15 @@ body, html {
     height: 37px;
     width: 156px;
     min-width: 159px;
-    color: #fff;
+    color: #000;
     text-decoration: none;
+    text-align: center;
 }
 
 .discussion__button:hover {
     cursor: pointer;
     border: 1px solid #298bfa;
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 
@@ -402,7 +401,7 @@ body, html {
 }
 
 .svg-img {
-    margin-right: 2px;
+    margin-right: 5px;
 }
 
 .video-link {
@@ -424,4 +423,8 @@ body, html {
 
 .col-description {
     min-width: 187px;
+}
+
+.no-margin {
+    margin: 0px;
 }
