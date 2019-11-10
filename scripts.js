@@ -48,11 +48,11 @@ $(document).ready(function () {
     $('.util-wrapper').css('align-items', 'center');
     $('.util-wrapper').css('height', '115px');
 
-    $('.intro-join__btn').click(function () {
-        $('#subscribeModal').modal({
-            'backdrop': 'static'
-        });
-    });
+    // $('.intro-join__btn').click(function () {
+    //     $('#subscribeModal').modal({
+    //         'backdrop': 'static'
+    //     });
+    // });
 
 
     var container1 = $('#simpleImg');
